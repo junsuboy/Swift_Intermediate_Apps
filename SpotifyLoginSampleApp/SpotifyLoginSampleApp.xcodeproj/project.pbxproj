@@ -14,6 +14,7 @@
 		8B6D32C327FC1E1300F4410C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6D32C127FC1E1300F4410C /* LaunchScreen.storyboard */; };
 		8B6D32CB27FC1E4300F4410C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D32CA27FC1E4300F4410C /* LoginViewController.swift */; };
 		8B6D32CD27FC2F8300F4410C /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D32CC27FC2F8300F4410C /* EnterEmailViewController.swift */; };
+		8B6D32CF27FC8B2800F4410C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D32CE27FC8B2800F4410C /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8B6D32C427FC1E1300F4410C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B6D32CA27FC1E4300F4410C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8B6D32CC27FC2F8300F4410C /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
+		8B6D32CE27FC8B2800F4410C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				8B6D32BF27FC1E1300F4410C /* Assets.xcassets */,
 				8B6D32C127FC1E1300F4410C /* LaunchScreen.storyboard */,
 				8B6D32C427FC1E1300F4410C /* Info.plist */,
+				8B6D32CE27FC8B2800F4410C /* MainViewController.swift */,
 			);
 			path = SpotifyLoginSampleApp;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				8B6D32B727FC1E1200F4410C /* AppDelegate.swift in Sources */,
 				8B6D32CD27FC2F8300F4410C /* EnterEmailViewController.swift in Sources */,
 				8B6D32B927FC1E1200F4410C /* SceneDelegate.swift in Sources */,
+				8B6D32CF27FC8B2800F4410C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
