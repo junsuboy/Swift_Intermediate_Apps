@@ -221,7 +221,7 @@
         <!--Main View Controller-->
         <scene sceneID="PTx-5E-ggd">
             <objects>
-                <viewController id="tlm-Rr-mc5" customClass="MainViewController" customModule="SpotifyLoginSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="tlm-Rr-mc5" customClass="MainViewController" customModule="SpotifyLoginSampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zd3-Mi-YKy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,8 +232,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7F-1p-UiV">
-                                <rect key="frame" x="174" y="503" width="67" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7F-1p-UiV">
+                                <rect key="frame" x="175.5" y="538" width="63" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="로그아웃">
@@ -243,17 +243,30 @@
                                     <action selector="logoutButtonTapped:" destination="tlm-Rr-mc5" eventType="touchUpInside" id="cO1-cC-0wd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJR-iD-3Tx">
+                                <rect key="frame" x="166" y="488" width="82" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="비밀번호 변경">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetPasswordButtonTapped:" destination="tlm-Rr-mc5" eventType="touchUpInside" id="oNW-Y1-6QY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I3Q-od-71I"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="c7F-1p-UiV" firstAttribute="top" secondItem="4Wa-jP-CQf" secondAttribute="bottom" constant="20" id="4EZ-ZR-4Tg"/>
                             <constraint firstItem="c7F-1p-UiV" firstAttribute="centerX" secondItem="I3Q-od-71I" secondAttribute="centerX" id="950-lP-j3G"/>
                             <constraint firstItem="4Wa-jP-CQf" firstAttribute="centerY" secondItem="I3Q-od-71I" secondAttribute="centerY" id="Cb6-yL-jKw"/>
+                            <constraint firstItem="c7F-1p-UiV" firstAttribute="top" secondItem="MJR-iD-3Tx" secondAttribute="bottom" constant="20" id="Lsv-iv-IbV"/>
                             <constraint firstItem="4Wa-jP-CQf" firstAttribute="centerX" secondItem="I3Q-od-71I" secondAttribute="centerX" id="OvO-tR-U5T"/>
+                            <constraint firstItem="MJR-iD-3Tx" firstAttribute="centerX" secondItem="I3Q-od-71I" secondAttribute="centerX" id="aP0-Ut-OOB"/>
+                            <constraint firstItem="MJR-iD-3Tx" firstAttribute="top" secondItem="4Wa-jP-CQf" secondAttribute="bottom" constant="20" id="ekt-OO-G3w"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resetPasswordButton" destination="MJR-iD-3Tx" id="JXZ-Yf-KSS"/>
                         <outlet property="welcomeLabel" destination="4Wa-jP-CQf" id="g6t-js-lHY"/>
                     </connections>
                 </viewController>
