@@ -8,5 +8,9 @@
 import UIKit
 
 class CardListViewController: UITableViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //UITableView Cell Register
+    }
 }
