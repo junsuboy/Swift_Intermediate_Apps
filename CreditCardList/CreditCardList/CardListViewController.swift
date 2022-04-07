@@ -40,4 +40,13 @@ class CardListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //상세화면 전달
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let detailViewController = storyboard.instantiateViewController(withIdentifier: "CardDetailViewController") as? CardDetailViewController else { return }
+        
+        detailViewController.promotionDetail = creditCardList[indexPath.row].promotionDetail
+        self.show(detailViewController, sender: nil)
+    }
 }
