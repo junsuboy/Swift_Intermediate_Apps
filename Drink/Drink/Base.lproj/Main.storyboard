@@ -55,8 +55,16 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="알람추가" id="ffg-pZ-9o6">
-                                        <barButtonItem key="leftBarButtonItem" title="취소" id="6TM-iD-fL6"/>
-                                        <barButtonItem key="rightBarButtonItem" title="저장" id="EEb-jT-6r6"/>
+                                        <barButtonItem key="leftBarButtonItem" title="취소" id="6TM-iD-fL6">
+                                            <connections>
+                                                <action selector="dismissButtonTapped:" destination="fsA-L9-m6I" id="UcS-qt-YMB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="저장" id="EEb-jT-6r6">
+                                            <connections>
+                                                <action selector="saveButtonTapped:" destination="fsA-L9-m6I" id="XIl-rG-8gV"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -67,7 +75,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="nbn-36-Gwa">
-                                <rect key="frame" x="201" y="154" width="193" height="50"/>
+                                <rect key="frame" x="201" y="153.5" width="193" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="193" id="wri-3J-MgC"/>
                                     <constraint firstAttribute="height" constant="50" id="z9W-C7-DWZ"/>
@@ -87,6 +95,9 @@
                             <constraint firstItem="RF5-fQ-hNr" firstAttribute="leading" secondItem="C3b-fH-286" secondAttribute="leading" id="vPw-tP-Oa2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="nbn-36-Gwa" id="Bhm-qh-bjO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQP-Pu-zpK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
