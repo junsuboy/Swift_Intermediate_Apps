@@ -46,7 +46,7 @@
         <!--Add Alert View Controller-->
         <scene sceneID="uUT-56-hAw">
             <objects>
-                <viewController id="fsA-L9-m6I" customClass="AddAlertViewController" customModule="Drink" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddAlertViewController" id="fsA-L9-m6I" customClass="AddAlertViewController" customModule="Drink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b2Q-MB-K7B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
