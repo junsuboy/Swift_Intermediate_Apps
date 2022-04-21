@@ -6,24 +6,25 @@
 //
 
 import UIKit
+import CoreData
 import NotificationCenter
 import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    let userNotificationCenter: UNUserNotificationCenter?
+    let userNotificationCenter = UNUserNotificationCenter.current()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         UNUserNotificationCenter.current().delegate = self
         
         let authurizationOptions = UNAuthorizationOptions(arrayLiteral: [.alert, .badge, .sound])
-        userNotificationCenter?.requestAuthorization(options: authurizationOptions, completionHandler: { _, error in
+        userNotificationCenter.requestAuthorization(options: authurizationOptions) { _, error in
             if let error = error {
                 print("ERROR: notification authrization request \(error.localizedDescription)")
             }
-        })
+        }
         
         return true
     }
