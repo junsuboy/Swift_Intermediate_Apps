@@ -15,6 +15,8 @@
 		8B6D33F42811D10600F4410C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8B6D33F32811D10600F4410C /* SnapKit */; };
 		8B6D33F62811D4B800F4410C /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B6D33F52811D4B800F4410C /* Content.plist */; };
 		8B6D33F82811D4EB00F4410C /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D33F72811D4EB00F4410C /* Content.swift */; };
+		8B6D33FA2811D7FC00F4410C /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D33F92811D7FC00F4410C /* ContentCollectionViewCell.swift */; };
+		8B6D33FC2811D99D00F4410C /* ContentCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D33FB2811D99D00F4410C /* ContentCollectionViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		8B6D33F02811CF3000F4410C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8B6D33F52811D4B800F4410C /* Content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Content.plist; sourceTree = "<group>"; };
 		8B6D33F72811D4EB00F4410C /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		8B6D33F92811D7FC00F4410C /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		8B6D33FB2811D99D00F4410C /* ContentCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				8B6D33F02811CF3000F4410C /* HomeViewController.swift */,
 				8B6D33F52811D4B800F4410C /* Content.plist */,
 				8B6D33F72811D4EB00F4410C /* Content.swift */,
+				8B6D33F92811D7FC00F4410C /* ContentCollectionViewCell.swift */,
+				8B6D33FB2811D99D00F4410C /* ContentCollectionViewHeader.swift */,
 			);
 			path = NetfilxStyleSampleApp;
 			sourceTree = "<group>";
@@ -150,9 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B6D33DD2811CED100F4410C /* AppDelegate.swift in Sources */,
+				8B6D33FC2811D99D00F4410C /* ContentCollectionViewHeader.swift in Sources */,
 				8B6D33DF2811CED100F4410C /* SceneDelegate.swift in Sources */,
 				8B6D33F12811CF3000F4410C /* HomeViewController.swift in Sources */,
 				8B6D33F82811D4EB00F4410C /* Content.swift in Sources */,
+				8B6D33FA2811D7FC00F4410C /* ContentCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
