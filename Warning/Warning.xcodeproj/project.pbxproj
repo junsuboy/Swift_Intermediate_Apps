@@ -58,7 +58,6 @@
 				4AD7F307F59CC62BCDFF7F41 /* Pods-Warning.debug.xcconfig */,
 				76FE8EC5A166AFFBA5F66D4B /* Pods-Warning.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
