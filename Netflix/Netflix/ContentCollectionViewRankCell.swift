@@ -17,6 +17,7 @@ class ContentCollectionViewRankCell: UICollectionViewCell {
         // contentView
         contentView.layer.cornerRadius = 5
         contentView.clipsToBounds = true
+        contentView.backgroundColor = .black
         
         // imageView
         imageView.contentMode = .scaleToFill

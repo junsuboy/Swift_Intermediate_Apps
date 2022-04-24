@@ -10,12 +10,13 @@ import SwiftUI
 
 class HomeViewController: UICollectionViewController {
     var contents: [Content] = []
+    var mainItem: Item?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 네비게이션 설정
-        navigationController?.navigationBar.backgroundColor = .clear
+        navigationController?.navigationBar.backgroundColor = .black
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.hidesBarsOnSwipe = true
@@ -25,12 +26,15 @@ class HomeViewController: UICollectionViewController {
     
         // Data 설정, 가져오기
         contents = getContents()
+        mainItem = contents.first?.contentItem.randomElement()
         
         // CollectionView Item(Cell) 설정
         collectionView.register(ContentCollectionViewCell.self, forCellWithReuseIdentifier: "ContentCollectionViewCell")
         collectionView.register(ContentCollectionViewRankCell.self, forCellWithReuseIdentifier: "ContentCollectionViewRankCell")
+        collectionView.register(CollectionContentViewMainCell.self, forCellWithReuseIdentifier: "CollectionContentViewMainCell")
         collectionView.register(ContentCollectionViewHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "ContentCollectionViewHeader")
         
+        collectionView.backgroundColor = .black
         collectionView.collectionViewLayout = layout()
     }
     
@@ -53,8 +57,8 @@ class HomeViewController: UICollectionViewController {
                 return self.createLargeTypeSection()
             case .rank:
                 return self.createRankTypeSection()
-            default:
-                return nil
+            case .main:
+                return self.createMainTypeSection()
             }
         }
     }
@@ -118,6 +122,21 @@ class HomeViewController: UICollectionViewController {
         return section
     }
     
+    // Main Section Layout
+    private func createMainTypeSection() -> NSCollectionLayoutSection {
+        // item
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        // group
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(450))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        // section
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = .init(top: 0, leading: 0, bottom: 20, trailing: 0)
+        
+        return section
+    }
+    
     // SectionHeader Layout 설정
     private func createSectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
         // SectionHeader 사이즈
@@ -134,15 +153,12 @@ class HomeViewController: UICollectionViewController {
 extension HomeViewController {
     // 섹션당 보여질 셀의 개수
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if contents[section].sectionType == .basic || contents[section].sectionType == .large || contents[section].sectionType == .rank{
-            switch section {
-            case 0:
-                return 1
-            default:
-                return contents[section].contentItem.count
-            }
+        switch section {
+        case 0:
+            return 1
+        default:
+            return contents[section].contentItem.count
         }
-        return 0
     }
     
     // 콜렉션뷰 셀 설정
@@ -159,8 +175,12 @@ extension HomeViewController {
             cell.imageView.image = contents[indexPath.section].contentItem[indexPath.row].image
             cell.rankLabel.text = String(describing: indexPath.row + 1)
             return cell
-        default:
-            return UICollectionViewCell()
+        case .main:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionContentViewMainCell", for: indexPath) as? CollectionContentViewMainCell else { return UICollectionViewCell() }
+            
+            cell.imageView.image = mainItem?.image
+            cell.descriptionLabel.text = mainItem?.description
+            return cell
         }
     }
     

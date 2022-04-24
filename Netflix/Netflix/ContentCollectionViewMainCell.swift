@@ -35,6 +35,7 @@ class CollectionContentViewMainCell: UICollectionViewCell {
         baseStackView.alignment = .center
         baseStackView.distribution = .fillProportionally
         baseStackView.spacing = 5
+        baseStackView.backgroundColor = .black
         
         [imageView, descriptionLabel, contentStackView].forEach {
             baseStackView.addArrangedSubview($0)
@@ -61,13 +62,14 @@ class CollectionContentViewMainCell: UICollectionViewCell {
         contentStackView.alignment = .center
         contentStackView.distribution = .equalCentering
         contentStackView.spacing = 20
+        contentStackView.backgroundColor = .black
         
         contentStackView.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview().inset(30)
+            $0.height.equalTo(60)
         }
         
         [plusButton, infoButton].forEach {
-            contentStackView.addArrangedSubview($0)
             $0.titleLabel?.font = .systemFont(ofSize: 13)
             $0.setTitleColor(.white, for: .normal)
             $0.imageView?.tintColor = .white
@@ -82,7 +84,6 @@ class CollectionContentViewMainCell: UICollectionViewCell {
         infoButton.setImage(UIImage(systemName: "info.circle"), for: .normal)
         infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
         
-        contentStackView.addArrangedSubview(playButton)
         playButton.setTitle("▸ 재생", for: .normal)
         playButton.setTitleColor(.black, for: .normal)
         playButton.backgroundColor = .white
@@ -93,11 +94,16 @@ class CollectionContentViewMainCell: UICollectionViewCell {
         }
         playButton.addTarget(self, action: #selector(playButtonTapped), for: .touchUpInside)
         
+        [plusButton, playButton, infoButton].forEach {
+            contentStackView.addArrangedSubview($0)
+        }
+        
         // menuStackView
         menuStackView.axis = .horizontal
         menuStackView.alignment = .center
         menuStackView.distribution = .equalSpacing
         menuStackView.spacing = 20
+        menuStackView.backgroundColor = .black
         
         [tvButton, movieButton, categoryButton].forEach {
             menuStackView.addArrangedSubview($0)
