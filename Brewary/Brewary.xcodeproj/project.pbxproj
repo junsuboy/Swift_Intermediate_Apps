@@ -16,6 +16,8 @@
 		8B80FED8281987680006AD8D /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FED7281987680006AD8D /* BeerListViewController.swift */; };
 		8B80FEDB2819888B0006AD8D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8B80FEDA2819888B0006AD8D /* SnapKit */; };
 		8B80FEDE281988A30006AD8D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8B80FEDD281988A30006AD8D /* Kingfisher */; };
+		8B80FEE02819890C0006AD8D /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FEDF2819890C0006AD8D /* Beer.swift */; };
+		8B80FEE228198B080006AD8D /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FEE128198B080006AD8D /* BeerListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8B4941342816C14000E2781C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B4941362816C14000E2781C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B80FED7281987680006AD8D /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		8B80FEDF2819890C0006AD8D /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		8B80FEE128198B080006AD8D /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,7 @@
 		8B49411C2816C13F00E2781C = {
 			isa = PBXGroup;
 			children = (
+				8B80FEDF2819890C0006AD8D /* Beer.swift */,
 				8B4941272816C13F00E2781C /* Brewary */,
 				8B4941262816C13F00E2781C /* Products */,
 			);
@@ -70,6 +75,7 @@
 				8B4941332816C14000E2781C /* LaunchScreen.storyboard */,
 				8B4941362816C14000E2781C /* Info.plist */,
 				8B80FED7281987680006AD8D /* BeerListViewController.swift */,
+				8B80FEE128198B080006AD8D /* BeerListCell.swift */,
 			);
 			path = Brewary;
 			sourceTree = "<group>";
@@ -155,8 +161,10 @@
 			files = (
 				8B80FED8281987680006AD8D /* BeerListViewController.swift in Sources */,
 				8B49412D2816C13F00E2781C /* ViewController.swift in Sources */,
+				8B80FEE02819890C0006AD8D /* Beer.swift in Sources */,
 				8B4941292816C13F00E2781C /* AppDelegate.swift in Sources */,
 				8B49412B2816C13F00E2781C /* SceneDelegate.swift in Sources */,
+				8B80FEE228198B080006AD8D /* BeerListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
