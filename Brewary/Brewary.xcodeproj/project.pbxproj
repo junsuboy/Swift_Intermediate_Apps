@@ -13,6 +13,7 @@
 		8B4941302816C13F00E2781C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B49412E2816C13F00E2781C /* Main.storyboard */; };
 		8B4941322816C14000E2781C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4941312816C14000E2781C /* Assets.xcassets */; };
 		8B4941352816C14000E2781C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4941332816C14000E2781C /* LaunchScreen.storyboard */; };
+		8B80FED8281987680006AD8D /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FED7281987680006AD8D /* BeerListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8B4941312816C14000E2781C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B4941342816C14000E2781C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B4941362816C14000E2781C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B80FED7281987680006AD8D /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8B4941312816C14000E2781C /* Assets.xcassets */,
 				8B4941332816C14000E2781C /* LaunchScreen.storyboard */,
 				8B4941362816C14000E2781C /* Info.plist */,
+				8B80FED7281987680006AD8D /* BeerListViewController.swift */,
 			);
 			path = Brewary;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B80FED8281987680006AD8D /* BeerListViewController.swift in Sources */,
 				8B49412D2816C13F00E2781C /* ViewController.swift in Sources */,
 				8B4941292816C13F00E2781C /* AppDelegate.swift in Sources */,
 				8B49412B2816C13F00E2781C /* SceneDelegate.swift in Sources */,
@@ -292,7 +296,6 @@
 				INFOPLIST_FILE = Brewary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +323,6 @@
 				INFOPLIST_FILE = Brewary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
