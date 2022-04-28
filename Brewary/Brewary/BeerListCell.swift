@@ -32,7 +32,7 @@ class BeerListCell: UITableViewCell {
         
         beerImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-            $0.leading.trailing.bottom.equalToSuperview().inset(20)
+            $0.leading.top.bottom.equalToSuperview().inset(20)
             $0.width.equalTo(80)
             $0.height.equalTo(120)
         }
@@ -51,7 +51,7 @@ class BeerListCell: UITableViewCell {
     
     func configure(with beer: Beer) {
         let imageURL = URL(string: beer.imageURL ?? "")
-        beerImageView.kf.setImage(with: imageURL, placeholder: #imageLiteral(resourceName: "beer"))
+        beerImageView.kf.setImage(with: imageURL, placeholder: UIImage(named: "beer_icon"))
         nameLabel.text = beer.name ?? "이름 없는 맥주"
         taglineLabel.text = beer.tagLine
         
