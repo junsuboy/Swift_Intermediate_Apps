@@ -48,4 +48,14 @@ class BeerListCell: UITableViewCell {
             $0.top.equalTo(nameLabel.snp.bottom).offset(5)
         }
     }
+    
+    func configure(with beer: Beer) {
+        let imageURL = URL(string: beer.imageURL ?? "")
+        beerImageView.kf.setImage(with: imageURL, placeholder: #imageLiteral(resourceName: "beer"))
+        nameLabel.text = beer.name ?? "이름 없는 맥주"
+        taglineLabel.text = beer.tagLine
+        
+        accessoryType = .disclosureIndicator
+        selectionStyle = .none
+    }
 }

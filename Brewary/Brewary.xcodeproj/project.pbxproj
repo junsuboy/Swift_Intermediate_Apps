@@ -18,6 +18,7 @@
 		8B80FEDE281988A30006AD8D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8B80FEDD281988A30006AD8D /* Kingfisher */; };
 		8B80FEE02819890C0006AD8D /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FEDF2819890C0006AD8D /* Beer.swift */; };
 		8B80FEE228198B080006AD8D /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FEE128198B080006AD8D /* BeerListCell.swift */; };
+		8B80FEE4281ADA560006AD8D /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FEE3281ADA560006AD8D /* BeerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8B80FED7281987680006AD8D /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		8B80FEDF2819890C0006AD8D /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		8B80FEE128198B080006AD8D /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
+		8B80FEE3281ADA560006AD8D /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +52,6 @@
 		8B49411C2816C13F00E2781C = {
 			isa = PBXGroup;
 			children = (
-				8B80FEDF2819890C0006AD8D /* Beer.swift */,
 				8B4941272816C13F00E2781C /* Brewary */,
 				8B4941262816C13F00E2781C /* Products */,
 			);
@@ -67,6 +68,7 @@
 		8B4941272816C13F00E2781C /* Brewary */ = {
 			isa = PBXGroup;
 			children = (
+				8B80FEDF2819890C0006AD8D /* Beer.swift */,
 				8B4941282816C13F00E2781C /* AppDelegate.swift */,
 				8B49412A2816C13F00E2781C /* SceneDelegate.swift */,
 				8B49412C2816C13F00E2781C /* ViewController.swift */,
@@ -76,6 +78,7 @@
 				8B4941362816C14000E2781C /* Info.plist */,
 				8B80FED7281987680006AD8D /* BeerListViewController.swift */,
 				8B80FEE128198B080006AD8D /* BeerListCell.swift */,
+				8B80FEE3281ADA560006AD8D /* BeerDetailViewController.swift */,
 			);
 			path = Brewary;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B80FEE4281ADA560006AD8D /* BeerDetailViewController.swift in Sources */,
 				8B80FED8281987680006AD8D /* BeerListViewController.swift in Sources */,
 				8B49412D2816C13F00E2781C /* ViewController.swift in Sources */,
 				8B80FEE02819890C0006AD8D /* Beer.swift in Sources */,
