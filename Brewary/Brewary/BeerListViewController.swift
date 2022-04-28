@@ -36,5 +36,14 @@ extension BeerListViewController {
         cell.configure(with: beer)
         
         return cell
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedBeer = beerList[indexPath.row]
+        let detailViewController = BeerDetailViewController()
+        
+        detailViewController.beer = selectedBeer
+        self.show(detailViewController, sender: nil)
     }
 }
