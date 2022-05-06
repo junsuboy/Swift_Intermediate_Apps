@@ -20,6 +20,8 @@
 		8B49411728159C6F00E2781C /* ContentCollectionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49411628159C6F00E2781C /* ContentCollectionViewRankCell.swift */; };
 		8B4941192815A0EE00E2781C /* ContentCollectionViewMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4941182815A0EE00E2781C /* ContentCollectionViewMainCell.swift */; };
 		8B49411B2815B01F00E2781C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49411A2815B01F00E2781C /* UIButton.swift */; };
+		8B80FF23281CA8070006AD8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FF22281CA8070006AD8D /* ContentView.swift */; };
+		8B80FF25281CA98F0006AD8D /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FF24281CA98F0006AD8D /* ContentDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,14 +31,16 @@
 		8B4940FC2811EE7800E2781C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B4940FF2811EE7800E2781C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B4941012811EE7800E2781C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B49410A2811EF6900E2781C /* ContentCollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentCollectionViewHeader.swift; path = ../../NetfilxStyleSampleApp/NetfilxStyleSampleApp/ContentCollectionViewHeader.swift; sourceTree = "<group>"; };
-		8B49410C2811EF6D00E2781C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../NetfilxStyleSampleApp/NetfilxStyleSampleApp/HomeViewController.swift; sourceTree = "<group>"; };
-		8B49410E2811EF7200E2781C /* Content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Content.plist; path = ../../NetfilxStyleSampleApp/NetfilxStyleSampleApp/Content.plist; sourceTree = "<group>"; };
-		8B4941102811EF7500E2781C /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Content.swift; path = ../../NetfilxStyleSampleApp/NetfilxStyleSampleApp/Content.swift; sourceTree = "<group>"; };
-		8B4941122811EF7800E2781C /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentCollectionViewCell.swift; path = ../../NetfilxStyleSampleApp/NetfilxStyleSampleApp/ContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		8B49410A2811EF6900E2781C /* ContentCollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewHeader.swift; sourceTree = "<group>"; };
+		8B49410C2811EF6D00E2781C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8B49410E2811EF7200E2781C /* Content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Content.plist; sourceTree = "<group>"; };
+		8B4941102811EF7500E2781C /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		8B4941122811EF7800E2781C /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		8B49411628159C6F00E2781C /* ContentCollectionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewRankCell.swift; sourceTree = "<group>"; };
 		8B4941182815A0EE00E2781C /* ContentCollectionViewMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewMainCell.swift; sourceTree = "<group>"; };
 		8B49411A2815B01F00E2781C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		8B80FF22281CA8070006AD8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B80FF24281CA98F0006AD8D /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +76,19 @@
 			children = (
 				8B4940F32811EE7700E2781C /* AppDelegate.swift */,
 				8B4940F52811EE7700E2781C /* SceneDelegate.swift */,
+				8B80FF22281CA8070006AD8D /* ContentView.swift */,
+				8B80FF24281CA98F0006AD8D /* ContentDetailView.swift */,
+				8B80FF21281CA7A20006AD8D /* NetflixSampleApp */,
 				8B4940FC2811EE7800E2781C /* Assets.xcassets */,
 				8B4940FE2811EE7800E2781C /* LaunchScreen.storyboard */,
 				8B4941012811EE7800E2781C /* Info.plist */,
+			);
+			path = Netflix;
+			sourceTree = "<group>";
+		};
+		8B80FF21281CA7A20006AD8D /* NetflixSampleApp */ = {
+			isa = PBXGroup;
+			children = (
 				8B49410A2811EF6900E2781C /* ContentCollectionViewHeader.swift */,
 				8B49410C2811EF6D00E2781C /* HomeViewController.swift */,
 				8B49410E2811EF7200E2781C /* Content.plist */,
@@ -84,7 +98,7 @@
 				8B4941182815A0EE00E2781C /* ContentCollectionViewMainCell.swift */,
 				8B49411A2815B01F00E2781C /* UIButton.swift */,
 			);
-			path = Netflix;
+			path = NetflixSampleApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,11 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B4940F42811EE7700E2781C /* AppDelegate.swift in Sources */,
+				8B80FF25281CA98F0006AD8D /* ContentDetailView.swift in Sources */,
 				8B49410B2811EF6900E2781C /* ContentCollectionViewHeader.swift in Sources */,
 				8B4941132811EF7900E2781C /* ContentCollectionViewCell.swift in Sources */,
 				8B49411728159C6F00E2781C /* ContentCollectionViewRankCell.swift in Sources */,
 				8B4940F62811EE7700E2781C /* SceneDelegate.swift in Sources */,
 				8B4941192815A0EE00E2781C /* ContentCollectionViewMainCell.swift in Sources */,
+				8B80FF23281CA8070006AD8D /* ContentView.swift in Sources */,
 				8B4941112811EF7500E2781C /* Content.swift in Sources */,
 				8B49410D2811EF6E00E2781C /* HomeViewController.swift in Sources */,
 				8B49411B2815B01F00E2781C /* UIButton.swift in Sources */,
